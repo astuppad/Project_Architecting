@@ -1,0 +1,8 @@
+# use and existing image as a base
+FROM alpine
+
+# Downlaod and install a dependecy
+RUN npm install
+
+# Tell the image what to do when it starts as a conatainer
+CMD ["npm", "start"]
